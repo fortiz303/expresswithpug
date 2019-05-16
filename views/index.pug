@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+  section#content
+    h2 Welcome #{name}
+    //Clears the cookie, see app.js(note2)
+    form(action='/goodbye', method='post')
+        button(type='submit') Clear name

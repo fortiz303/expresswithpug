@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    form(action='/home', method='post')
+        label Please enter your name: 
+        //Gives input value name of 'username'(see app.js(note1))
+            input(type='text', name='username')
+        button(type='submit') Submit
